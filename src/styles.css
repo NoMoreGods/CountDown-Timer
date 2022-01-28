@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Quicksand:wght@700&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+.timer-container {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  text-align: center;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 7em;
+  width: 100%;
+  height: 100%;
+}
+.timer__header {
+  text-align: center;
+  width: 70%;
+}
+.timer__icon {
+  width: 8em;
+  height: 8em;
+}
+h1 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+h3 {
+  color: #f8f8f8;
+}
+.timer__body {
+  width: 60%;
+  border: 1px solid white;
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 3em;
+  padding: 3em;
+  text-align: center;
+}
+.timer__date-time {
+  font-size: 3em;
+}
+.timer__date-time_small {
+  font-size: 1.5em;
+}
+
+@media screen and(max-width: 480px) {
+  .timer__body {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em 3em;
+  }
+}
